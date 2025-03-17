@@ -30,7 +30,7 @@ jobs:
         Tmux_Version=$(cat tmux_version.data)
         echo "VERSION=$Tmux_Version" >> $GITHUB_ENV
     - name: Make And Upload Release
-      uses: softprops/action-gh-release@v1
+      uses: softprops/action-gh-release@v2
       with:
         prerelease: false
         name: Tmux Static Release ${{ env.VERSION }}
