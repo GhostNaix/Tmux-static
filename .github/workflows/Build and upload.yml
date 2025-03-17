@@ -37,4 +37,4 @@ jobs:
         tag_name: ${{ env.VERSION }}
         files: |
           ./Tmux-Static*
-        token: ${{ secrets.GITHUB_TOKEN }}
+        token: ${{ secrets.RELEASE_TOKEN }}
