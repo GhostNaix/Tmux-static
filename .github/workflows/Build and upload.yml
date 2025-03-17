@@ -33,7 +33,7 @@ jobs:
       uses: softprops/action-gh-release@v2
       with:
         prerelease: false
-        name: Tmux Static Release ${{ env.VERSION }}
+        name: Tmux Static ${{ env.VERSION }}
         tag_name: ${{ env.VERSION }}
         files: |
           ./Tmux-Static*
