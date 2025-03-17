@@ -24,7 +24,7 @@ echo "Compiling..."
 make -j$((`nproc`+1))
 
 echo "Stripping binaries"
-strip -x tmux
+strip -s tmux
 # Finish up
 ## Create File that marks the environment has been marked
 cd ..
