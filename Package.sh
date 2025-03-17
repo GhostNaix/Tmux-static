@@ -12,8 +12,8 @@ fi
 export Tmux_Version=$(cat tmux_version.data)
 cd tmux-*/
 echo "Packaging Tmux Static binaries for distribution...."
-tar -czvf ../Tmux-Static-$Tmux_Version.tar.gz tmux
-tar -cJvf ../Tmux-Static-$Tmux_Version.tar.xz tmux
-zip ../Tmux-Static-$Tmux_Version.zip tmux
+tar -czvf ../Tmux-Static-$Tmux_Version-x86_64.tar.gz tmux
+tar -cJvf ../Tmux-Static-$Tmux_Version-x86_64.tar.xz tmux
+zip ../Tmux-Static-$Tmux_Version-x86_64.zip tmux
 echo "Done"
 exit
